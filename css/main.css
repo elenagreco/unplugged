@@ -132,7 +132,7 @@ h1 {
 }
  
 h2 {
-	font-size: 1em;
+	font-size: 1.4em;
 }
  
 figure {
@@ -302,7 +302,6 @@ main {
 .contact-info{
     width: 100%;
     padding-top: 30px;
-    margin: 15px 10px;
  }
  
  .contact-info ul {
@@ -320,8 +319,6 @@ main {
     padding-bottom: 75%;
     height: 0;
     overflow: hidden;
-    margin-left: 10px;
-    margin-right: 10px;
 }
  
 .map-container iframe {
@@ -397,11 +394,6 @@ main {
     color: #B61B48;
 }
 
- .faqs {
-     padding-right: 10px;
-     padding-left: 10px;
- }
-
  .faqs-item {
     border-bottom: 1px solid #cccccc;
  }
@@ -409,6 +401,10 @@ main {
  .faqs-item h3 {
     font-weight: 400;
  }
+
+.last-item {
+    border-bottom: none;
+}
 
 /* FOOTER =========================== */
 
@@ -610,7 +606,8 @@ nav ul li {
 }
 
 .feed-item {
-    padding-right: 20px;
+    margin-right: 10px;
+
 }
 
 .feed-img {
@@ -618,7 +615,7 @@ nav ul li {
 }
 
 .feed-info {
-    width: 57%;
+    width: 65%;
 }
 
 .feed-info p {
@@ -634,8 +631,22 @@ nav ul li {
 
 .map-container {
     padding-bottom: 40%;
-    margin-right: 20px;
-    margin-left: 0;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    width: 58%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    border: 1px solid #333;
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .mission {
@@ -658,11 +669,10 @@ nav ul li {
      margin: auto;
 }
 
-
+}
 
 @media only screen and (min-width:940px) {
 /*Desktop styles here*/
-}
 
 /* HEADER ==================================== */
 .logo {
@@ -674,9 +684,9 @@ nav ul li {
     max-width: 312px;
 }
 
-.nav {
+nav {
     width: 50%;
-    display: block;
+    float: left;
 }
 
 /* FEATURED NEWS ITEM ===================*/
@@ -698,6 +708,9 @@ nav ul li {
     padding-bottom: 1em;
 }
  
+.top-img img {
+	max-width: 620px;
+}
 
 /* SIDE BAR =========================== */
 
@@ -750,22 +763,11 @@ nav ul li {
 
 /* ABOUT US ================================= */
 
-main {
-    margin-left: 20px;
-    margin-right: 20px;
+h1 {
+    font-size: 1.6em;
+    line-height: 1.8em;
 }
 
-.contact-info {
-    width: 40%;
-    float: left;
-}
-
-.map-container {
-    padding-bottom: 35%;
-    margin-right: 30px;
-    
-
-}
 .team-img {
     margin-right: 4%;
 }
@@ -775,6 +777,7 @@ main {
     margin-right: 5%;
 }
 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -850,3 +853,4 @@ main {
         page-break-after: avoid;
     }
 }
+
